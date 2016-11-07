@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Kunci"
+        android:textAlignment="center"
+        android:ems="10"
+        android:layout_marginTop="72dp"
+        android:id="@+id/idKey"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edittext"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Ulangi Kunci"
+        android:ems="10"
+        android:textAlignment="center"
+        android:layout_marginTop="49dp"
+        android:id="@+id/idKey1"
+        android:layout_below="@+id/idKey"
+        android:layout_alignLeft="@+id/idKey"
+        android:layout_alignStart="@+id/idKey" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Jawaban"
+        android:ems="10"
+        android:textAlignment="center"
+        android:id="@+id/idJawaban"
+        android:layout_marginTop="72dp"
+        android:layout_below="@+id/idPer"
+        android:layout_alignLeft="@+id/idKey1"
+        android:layout_alignStart="@+id/idKey1" />
+
+    <Button
+        android:text="SETTING"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSimpan"
+        android:layout_marginTop="84dp"
+        android:layout_below="@+id/idJawaban"
+        android:layout_centerHorizontal="true" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:id="@+id/idPer"
+        android:layout_below="@+id/idKey1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

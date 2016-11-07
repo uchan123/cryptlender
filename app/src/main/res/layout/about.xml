@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="
+        Aplikasi Android Agenda yang dienkripsi ini merupakan aplikasi perencanaan kegiatan pribadi yang bersifat rahasia."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView9"
+        android:textAlignment="center"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="383dp"
+        android:id="@+id/idimg"
+        android:src="@drawable/u"
+        android:scaleType="center" />
+
+    <TextView
+        android:text="Aplikasi Kalender v1.0 oleh Upik Paranita, STMIK AMIKOM YOGYAKARTA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView10"
+        android:textAlignment="center" />
+</LinearLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Jam"
+        android:ems="10"
+        android:layout_marginTop="31dp"
+        android:id="@+id/idJam"
+        android:layout_below="@+id/idTanggal"
+        android:layout_alignLeft="@+id/idTanggal"
+        android:layout_alignStart="@+id/idTanggal"
+        android:enabled="false"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Tanggal"
+        android:ems="10"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="49dp"
+        android:id="@+id/idTanggal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:enabled="false" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Judul"
+        android:ems="10"
+        android:layout_marginTop="27dp"
+        android:id="@+id/idJudul"
+        android:layout_below="@+id/idJam"
+        android:layout_alignLeft="@+id/idJam"
+        android:layout_alignStart="@+id/idJam" />
+
+    <Switch
+        android:text="Reminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/idOn"
+        android:layout_alignTop="@+id/idPartisipan"
+        android:layout_alignLeft="@+id/idPartisipan"
+        android:layout_alignStart="@+id/idPartisipan"
+        android:layout_marginTop="85dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/idIsi"
+        android:hint="Isi"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/idJudul"
+        android:layout_alignLeft="@+id/idJudul"
+        android:layout_alignStart="@+id/idJudul" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Partisipan"
+        android:ems="10"
+        android:id="@+id/idPartisipan"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/btnlokasi"
+        android:layout_alignLeft="@+id/idLokasi"
+        android:layout_alignStart="@+id/idLokasi" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Lokasi"
+        android:ems="10"
+        android:id="@+id/idLokasi"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/idIsi"
+        android:layout_alignLeft="@+id/idIsi"
+        android:layout_alignStart="@+id/idIsi" />
+
+    <Button
+        android:text="Pilih Tanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btntgl"
+        android:layout_alignTop="@+id/idTanggal"
+        android:layout_alignLeft="@+id/btnjam"
+        android:layout_alignStart="@+id/btnjam" />
+
+    <Button
+        android:text="Pilih Jam "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="72dp"
+        android:layout_marginStart="72dp"
+        android:id="@+id/btnjam"
+        android:layout_alignTop="@+id/idJam"
+        android:layout_toRightOf="@+id/idJam"
+        android:layout_toEndOf="@+id/idJam" />
+
+    <Button
+        android:text="Cari Lokasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnlokasi"
+        android:layout_alignTop="@+id/idLokasi"
+        android:layout_alignLeft="@+id/btnjam"
+        android:layout_alignStart="@+id/btnjam" />
+
+</RelativeLayout>

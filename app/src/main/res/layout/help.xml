@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aplikasi kalender ini dapat anda gunakan untuk menandai agenda pribadi anda, dimana isi agenda tersebut dienkripsi. "
+        android:id="@+id/txt_help2"
+        android:layout_weight="0.01"
+        android:layout_marginTop="10dp"
+           />
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Untuk menjalankan aplikasi Anda dapat memilih ikon menu di sudut kanan atas, maka silahkan pilih kategori yang ingin anda akses"
+        android:id="@+id/txt_help"
+            android:layout_weight="0.01"
+        />
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Membuat agenda baru dapat anda lakukan dengan memilih menu tambah (+) atau dengan menekan lama pada tanggal agenda anda kemudian isi data terkait, setelah itu pilih enkrip dan simpan. Kunci yang digunakan sudah dimasukkan saat registrasi awal. "
+        android:id="@+id/txt_help3"
+        android:layout_weight="0.01"
+        />
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mengedit agenda yang telah anda buat dapat dilakukan dengan memilih agenda yang ingin diedit berdasarkan judul pada list agenda, kemudian pilih edit dan masukkan kunci untuk mendekrip file"
+        android:id="@+id/txt_help4"
+        android:layout_weight="0.01"
+        />
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tentang adalah halaman terkait aplikasi."
+        android:id="@+id/txt_help6"
+        android:layout_weight="0.01"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bantuan adalah halaman yang dapat membantu Anda dalam menggunakan aplikasi kalender"
+            android:id="@+id/txt_help7"
+            android:layout_weight="0.01"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menu pertanyaan keamanan dapat anda gunakan sebagai pengingat apabila anda lupa kunci, atau mengupdate kunci tersebut."
+            android:id="@+id/txt_help5"
+            android:layout_weight="0.01"
+             />
+
+
+</LinearLayout>

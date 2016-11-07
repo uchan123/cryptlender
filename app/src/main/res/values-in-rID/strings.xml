@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="day0">Min</string>
+    <string name="day1">Sen</string>
+    <string name="day2">Sel</string>
+    <string name="day3">Rab</string>
+    <string name="day4">Kam</string>
+    <string name="day5">Jum</string>
+    <string name="day6">Sab</string>
+</resources>

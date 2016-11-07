@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:text=" jam "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/idtgl"
+        android:layout_toRightOf="@+id/idtgl"
+        android:layout_toEndOf="@+id/idtgl"
+        android:layout_marginLeft="83dp"
+        android:layout_marginStart="83dp"
+        android:id="@+id/idjam"
+        android:textSize="18dp" />
+
+    <TextView
+        android:text=" isi "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/idisi"
+        android:textSize="18dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/idtgl"
+        android:layout_alignStart="@+id/idtgl"
+        android:layout_marginTop="61dp" />
+
+    <TextView
+        android:text=" lokasi "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/idlokasi"
+        android:textSize="18dp"
+        android:layout_marginTop="41dp"
+        android:layout_below="@+id/idjam"
+        android:layout_alignLeft="@+id/idtgl"
+        android:layout_alignStart="@+id/idtgl" />
+
+    <TextView
+        android:text=" partisipan "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/idpartisipan"
+        android:textSize="18dp"
+        android:layout_marginTop="59dp"
+        android:layout_below="@+id/idlokasi"
+        android:layout_alignLeft="@+id/idlokasi"
+        android:layout_alignStart="@+id/idlokasi" />
+
+    <TextView
+        android:text=" tanggal "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="95dp"
+        android:layout_marginStart="95dp"
+        android:id="@+id/idtgl"
+        android:textSize="18dp"
+        android:layout_marginTop="42dp"
+        android:layout_below="@+id/idisi"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

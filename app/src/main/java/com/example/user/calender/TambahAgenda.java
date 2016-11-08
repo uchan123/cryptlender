@@ -94,8 +94,9 @@ public class TambahAgenda extends AppCompatActivity implements View.OnClickListe
             alamat = addresses.get(0).getAddressLine(0);
         } catch (IOException e) {
             e.printStackTrace();
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-
     }
 
     public void onClick(View v) {
@@ -105,13 +106,11 @@ public class TambahAgenda extends AppCompatActivity implements View.OnClickListe
             mMonth = c.get(Calendar.MONTH);
             mDay = c.get(Calendar.DAY_OF_MONTH);
 
-            DatePickerDialog datePickerDialog = new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
-                public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
-                    String bulan = String.valueOf(monthOfYear + 1);
-                    String hari = String.valueOf(dayOfMonth);
+            DatePickerDialog datePickerDialog = new DatePickerDialog(this, (view, year, monthOfYear, dayOfMonth) -> {
+                String bulan = String.valueOf(monthOfYear + 1);
+                String hari = String.valueOf(dayOfMonth);
 
-                    tanggal.setText(year + "-" + (bulan.length() > 1 ? bulan : "0" + bulan) + "-" + (hari.length() > 1 ? hari : "0" + hari));
-                }
+                tanggal.setText(year + "-" + (bulan.length() > 1 ? bulan : "0" + bulan) + "-" + (hari.length() > 1 ? hari : "0" + hari));
             }, mYear, mMonth, mDay);
             datePickerDialog.show();
         }
@@ -121,11 +120,7 @@ public class TambahAgenda extends AppCompatActivity implements View.OnClickListe
             mHour = c.get(Calendar.HOUR_OF_DAY);
             mMinute = c.get(Calendar.MINUTE);
 
-            TimePickerDialog timePickerDialog = new TimePickerDialog(this, new TimePickerDialog.OnTimeSetListener() {
-                public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
-                    jam.setText(hourOfDay + ":" + minute);
-                }
-            }, mHour, mMinute, false);
+            TimePickerDialog timePickerDialog = new TimePickerDialog(this, (view, hourOfDay, minute) -> jam.setText(hourOfDay + ":" + minute), mHour, mMinute, false);
             timePickerDialog.show();
         }
 

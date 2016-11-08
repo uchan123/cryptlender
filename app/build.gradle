@@ -3,7 +3,7 @@ apply plugin: 'me.tatarka.retrolambda'
 
 android {
     compileSdkVersion 24
-    buildToolsVersion "23.0.3"
+    buildToolsVersion '24.0.2'
 
     defaultConfig {
         applicationId "com.example.user.calender"
@@ -32,8 +32,8 @@ dependencies {
     compile 'com.google.android.gms:play-services-appindexing:8.1.0'
     compile 'com.readystatesoftware.sqliteasset:sqliteassethelper:+'
     compile 'com.annimon:stream:1.1.3'
-    compile 'com.android.support:support-v4:24.0.0-alpha1'
-    compile 'com.android.support:appcompat-v7:24.0.0'
     compile 'com.google.android.gms:play-services:9.8.0'
     compile 'com.android.support:multidex:1.0.0'
+    compile 'com.android.support:support-v4:24.2.0'
+    compile 'com.android.support:appcompat-v7:24.2.0'
 }
